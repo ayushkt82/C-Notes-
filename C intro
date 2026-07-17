@@ -1,41 +1,329 @@
-C-Programming-Notes/
-│
-├── README.md
-├── LICENSE
-├── CONTRIBUTING.md
-├── .gitignore
-│
-├── 01-Introduction-to-C/
-│   ├── README.md
-│   ├── history.md
-│   ├── features.md
-│   ├── first-program.md
-│   └── quiz.md
-│
-├── 02-Basics/
-├── 03-Data-Types/
-├── 04-Operators/
-├── 05-Input-Output/
-├── 06-Control-Statements/
-├── 07-Loops/
-├── 08-Functions/
-├── 09-Arrays/
-├── 10-Strings/
-├── 11-Pointers/
-├── 12-Structures/
-├── 13-Unions/
-├── 14-Enums/
-├── 15-Storage-Classes/
-├── 16-Dynamic-Memory/
-├── 17-File-Handling/
-├── 18-Preprocessor/
-├── 19-Bitwise/
-├── 20-Searching-Sorting/
-├── 21-Linked-Lists/
-├── 22-Stacks-Queues/
-├── 23-Trees/
-├── 24-Interview-Questions/
-├── 25-Programs/
-│
-├── images/
-└── assets/
+# 📘 Introduction to C
+
+> Learn the fundamentals of the C programming language, its history, features, applications, and why it remains one of the most influential programming languages today.
+
+---
+
+## 📑 Table of Contents
+
+- [What is C?](#-what-is-c)
+- [History of C](#-history-of-c)
+- [Why Learn C?](#-why-learn-c)
+- [Features of C](#-features-of-c)
+- [Applications of C](#-applications-of-c)
+- [Advantages](#-advantages)
+- [Limitations](#-limitations)
+- [Structure of a C Program](#-structure-of-a-c-program)
+- [Your First Program](#-your-first-program)
+- [Compilation Process](#-compilation-process)
+- [Summary](#-summary)
+- [Interview Questions](#-interview-questions)
+- [Practice Questions](#-practice-questions)
+
+---
+
+# 📖 What is C?
+
+C is a **general-purpose, procedural programming language** developed by **Dennis Ritchie** at **Bell Laboratories** in **1972**.
+
+It was designed to develop the UNIX operating system and quickly became one of the world's most widely used programming languages.
+
+Today, C is considered the **mother of modern programming languages** because many popular languages such as C++, Java, C#, Objective-C, PHP, JavaScript, and Python have borrowed concepts from C.
+
+---
+
+# 🕒 History of C
+
+| Year | Event |
+|------|-------|
+| 1967 | BCPL developed by Martin Richards |
+| 1970 | B Language created by Ken Thompson |
+| 1972 | C Language developed by Dennis Ritchie |
+| 1978 | First edition of *The C Programming Language* published |
+| 1989 | ANSI standardized C (ANSI C) |
+| 1999 | C99 Standard |
+| 2011 | C11 Standard |
+| 2018 | C17 Standard |
+| 2023 | C23 Standard |
+
+---
+
+# 🎯 Why Learn C?
+
+Learning C provides a strong foundation for programming.
+
+Benefits include:
+
+- Understand how computers manage memory
+- Learn pointers and memory addresses
+- Improve problem-solving skills
+- Build efficient software
+- Prepare for system programming
+- Develop embedded systems
+- Strengthen understanding of data structures and algorithms
+
+---
+
+# ⭐ Features of C
+
+- Simple Syntax
+- Fast Execution
+- Portable
+- Structured Programming
+- Modular Programming
+- Rich Standard Library
+- Dynamic Memory Management
+- Supports Recursion
+- Mid-Level Language
+- Extensible
+
+---
+
+# 🖥 Applications of C
+
+C is widely used in:
+
+- Operating Systems
+- Embedded Systems
+- Device Drivers
+- Databases
+- Compilers
+- Networking Software
+- Game Engines
+- IoT Devices
+- Robotics
+- Microcontrollers
+
+Examples:
+
+- Linux Kernel
+- Git
+- SQLite
+- MySQL
+- Python Interpreter
+- Redis
+
+---
+
+# ✅ Advantages
+
+✔ High Performance
+
+✔ Easy to Learn
+
+✔ Portable
+
+✔ Efficient Memory Usage
+
+✔ Close to Hardware
+
+✔ Large Community
+
+✔ Foundation for Other Languages
+
+---
+
+# ❌ Limitations
+
+- No Object-Oriented Programming
+- No Garbage Collection
+- Manual Memory Management
+- No Exception Handling
+- Less Secure Compared to Modern Languages
+
+---
+
+# 🏗 Structure of a C Program
+
+```text
++--------------------------------------+
+| Preprocessor Directives              |
++--------------------------------------+
+| Header Files                         |
++--------------------------------------+
+| Global Variables                     |
++--------------------------------------+
+| main() Function                      |
+|   ├── Variable Declaration           |
+|   ├── Statements                     |
+|   └── return 0;                      |
++--------------------------------------+
+| User Defined Functions               |
++--------------------------------------+
+```
+
+---
+
+# 👨‍💻 Your First Program
+
+```c
+#include <stdio.h>
+
+int main(void)
+{
+    printf("Hello, World!\n");
+    return 0;
+}
+```
+
+### Output
+
+```
+Hello, World!
+```
+
+---
+
+# 🔍 Explanation
+
+```c
+#include <stdio.h>
+```
+
+Includes the Standard Input Output library.
+
+---
+
+```c
+int main(void)
+```
+
+The program execution starts from the `main()` function.
+
+---
+
+```c
+printf("Hello, World!");
+```
+
+Prints text to the console.
+
+---
+
+```c
+return 0;
+```
+
+Indicates successful program execution.
+
+---
+
+# ⚙ Compilation Process
+
+```text
+Source Code (.c)
+        │
+        ▼
+Preprocessor
+        │
+        ▼
+Compiler
+        │
+        ▼
+Assembler
+        │
+        ▼
+Object File
+        │
+        ▼
+Linker
+        │
+        ▼
+Executable Program
+```
+
+---
+
+# 💡 Interesting Facts
+
+- C is over 50 years old.
+- Most operating systems are written in C.
+- The Python interpreter is written largely in C.
+- Git was originally written in C.
+- Many embedded devices rely on C.
+
+---
+
+# 📝 Summary
+
+- C is a procedural programming language.
+- Developed by Dennis Ritchie in 1972.
+- Highly efficient and portable.
+- Widely used for system programming.
+- Foundation for learning advanced programming concepts.
+
+---
+
+# 🎯 Interview Questions
+
+### 1. Who developed C?
+
+Dennis Ritchie.
+
+---
+
+### 2. Why is C called a middle-level language?
+
+Because it supports both low-level memory manipulation and high-level programming constructs.
+
+---
+
+### 3. Which operating system was primarily written in C?
+
+UNIX.
+
+---
+
+### 4. What is the entry point of every C program?
+
+`main()`
+
+---
+
+### 5. What does `return 0;` mean?
+
+It indicates successful execution of the program.
+
+---
+
+# 🧪 Practice Questions
+
+1. Write a program to print your name.
+2. Print your college details.
+3. Print a pattern using `printf()`.
+4. Explain the role of `main()`.
+5. List five applications of C.
+6. Draw the compilation process.
+7. Compare C with C++.
+8. Explain why C is still popular.
+
+---
+
+# 📚 Recommended Resources
+
+- *The C Programming Language* — Brian W. Kernighan & Dennis M. Ritchie
+- *C Programming: A Modern Approach* — K. N. King
+- ISO C Standard Documentation
+
+---
+
+## 📌 Next Chapter
+
+➡ **02 – Basics of C**
+
+Topics include:
+
+- Variables
+- Constants
+- Keywords
+- Identifiers
+- Comments
+- Basic Syntax
+
+---
+
+<div align="center">
+
+⭐ **If you found these notes helpful, consider giving this repository a star!**
+
+</div>
